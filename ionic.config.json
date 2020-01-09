@@ -1,0 +1,8 @@
+{
+  "name": "Doar_Mais_FrontEnd",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
