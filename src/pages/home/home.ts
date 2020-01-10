@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController, MenuController } from 'ionic-angular';
+import { CampanhaPage } from '../campanha/campanha';
 
 @Component({
   selector: 'page-home',
@@ -21,7 +22,7 @@ export class HomePage {
   }
 
   login(){
-    this.navCtrl.push('HomePage');
+    this.navCtrl.setRoot(CampanhaPage);
   }
 
 }
