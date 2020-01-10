@@ -1,3 +1,42 @@
 page-home {
 
+    div{
+    background-image: linear-gradient(top, #ffdddf 0%, #ffdddf 0%, #ff8080 71.51639344262296%, #dd2a45 100%, #dd2a45 100%);
+    background-image: -webkit-linear-gradient(top, #ffdddf 0%, #ffdddf 0%, #ff8080 71.51639344262296%, #dd2a45 100%, #dd2a45 100%);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    }
+
+    img{
+        width: 250px;
+        align-self: center;
+        margin: auto;
+        display: block;
+        padding: 10px;
+    }
+
+    .input{
+        background-color: white;
+    }
+
+    .right{
+        text-align: right;
+        padding: 40px;
+        color: white;
+        }
+
+    .left{
+        text-align: left;
+        padding: 40px;
+        color: white;
+        }   
+        
+    .center{
+        text-align: center;
+        padding: 70px;
+        color: white;
+        align-self: center;
+        }     
+
 }
