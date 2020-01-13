@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { CidadeProvider } from '../../providers/cidade/cidade';
+import { cidadeDTO } from '../../models/cidade.dto';
 
 /**
  * Generated class for the CampanhaPage page.
@@ -15,11 +17,20 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class CampanhaPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  cidadeDTO: cidadeDTO;
+
+  constructor(public navCtrl: NavController, 
+    public navParams: NavParams,
+    public cidadeProvider: CidadeProvider) {
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad CampanhaPage');
+    this.cidadeProvider.findAll().subscribe(
+      result=>{
+        (this.cidadeDTO = result)
+      },
+      error=>{}
+    )
   }
 
 }
