@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="danger">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Doar +</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <div>Hemocentros proximos</div>
+  <br>
+  <div>Filtre sua Busca</div>
+
+  <ion-row>
+    <ion-col>
+      <ion-list>
+        <ion-item>
+          <ion-label>Estado</ion-label>
+          <ion-select [(ngModel)]="estado" cancelText="Cancel" okText="Ok!">
+            <ion-option value="saopaulo">São Paulo</ion-option>
+          </ion-select>
+        </ion-item>
+        <ion-item>
+          <ion-label>Cidade</ion-label>
+          <ion-select [(ngModel)]="cidade" cancelText="Cancel" okText="Ok!">
+            <ion-option value="campinas">Campinas</ion-option>
+          </ion-select>
+        </ion-item>
+      </ion-list>
+      <br>
+    </ion-col>
+  </ion-row>
+
+
+    <button ion-button round block color="danger">Filtrar</button>
+    <button ion-button round block color="danger">Próximos</button>
+
+    <br>
+    
+    <ion-list>
+      <ion-item>
+        <h2>Santa casa de Limeira</h2>
+        <ion-icon item-end>
+          <button ion-button clear>
+            <img src="../../assets/imgs/botao-mapa.png">
+          </button>
+        </ion-icon>
+      </ion-item>
+    </ion-list>
+
+
+
+</ion-content>

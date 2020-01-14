@@ -11,12 +11,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { CampanhaPageModule } from '../pages/campanha/campanha.module';
 import { CidadeProvider } from '../providers/cidade/cidade';
 import { HttpClientModule } from '@angular/common/http';
+import { HemocentroPage } from '../pages/hemocentro/hemocentro';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HemocentroPage
   ],
   imports: [
     BrowserModule,
@@ -28,7 +30,8 @@ import { HttpClientModule } from '@angular/common/http';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    HemocentroPage
   ],
   providers: [
     StatusBar,
